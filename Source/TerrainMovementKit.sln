@@ -1,0 +1,13 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{14F91874-7848-4927-A6E4-4B30E15B3307}") = "TerrainMovementKit", "TerrainMovementKit.csproj", "{14F91874-7848-4927-A6E4-4B30E15B3307}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		1.4|x64 = 1.4|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14F91874-7848-4927-A6E4-4B30E15B3307}.1.4|x64.ActiveCfg = 1.4|x64
+		{14F91874-7848-4927-A6E4-4B30E15B3307}.1.4|x64.Build.0 = 1.4|x64
+	EndGlobalSection
+EndGlobal
