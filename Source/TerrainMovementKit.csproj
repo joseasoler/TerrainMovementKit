@@ -19,6 +19,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Include="Cell\RCellFinderPatches.cs" />
+		<Compile Include="Mod.cs" />
 		<Compile Include="Properties\AssemblyInfo.cs" />
 		<Compile Include="TerrainMovementPawnKindGraphics.cs" />
 		<Compile Include="TerrainMovementPawnRestrictions.cs" />
