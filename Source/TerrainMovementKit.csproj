@@ -2,7 +2,7 @@
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<ProjectGuid>{14F91874-7848-4927-A6E4-4B30E15B3307}</ProjectGuid>
-		<RootNamespace>TMK</RootNamespace>
+		<RootNamespace>TerrainMovement</RootNamespace>
 		<AssemblyName>TerrainMovementKit</AssemblyName>
 		<OutputType>Library</OutputType>
 		<TargetFramework>net472</TargetFramework>
@@ -20,26 +20,15 @@
 
 	<ItemGroup>
 		<Compile Include="Properties\AssemblyInfo.cs" />
+		<Compile Include="TerrainMovementPawnKindGraphics.cs" />
+		<Compile Include="TerrainMovementPawnRestrictions.cs" />
+		<Compile Include="TerrainMovementStatDef.cs" />
+		<Compile Include="TerrainMovementTerrainRestrictions.cs" />
 		<Reference Include="System" />
 		<PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime" />
 		<Reference Include="Assembly-CSharp">
 			<HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
 			<HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\RimWorldLinux_Data\Managed\Assembly-CSharp.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="UnityEngine.CoreModule">
-			<HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-			<HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\RimWorldLinux_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="UnityEngine.IMGUIModule">
-			<HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-			<HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\RimWorldLinux_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
-			<Private>False</Private>
-		</Reference>
-		<Reference Include="UnityEngine.TextRenderingModule">
-			<HintPath Condition="$([MSBuild]::IsOSPlatform('Windows'))">..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
-			<HintPath Condition="$([MSBuild]::IsOSPlatform('Linux'))">..\..\..\RimWorldLinux_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
 			<Private>False</Private>
 		</Reference>
 	</ItemGroup>
